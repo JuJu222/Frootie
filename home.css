@@ -18,7 +18,7 @@ body{
 .navigationbar{
     display:flex;
     align-items: center;
-    padding: 10px;
+    padding: 5px;
     background-color: black;
 }
 
@@ -54,8 +54,6 @@ nav ul li:hover{
 .container{
     max-width: 2000px;
     margin:auto;
-    padding-left: 5px;
-    padding-right: 5px;
 }
 
 .row{
@@ -116,7 +114,8 @@ nav ul li:hover{
 }
 
 .categories{
-    margin: 70px 0;
+    margin: px 0;
+    background: radial-gradient(#dc143d,#fa8072);
 }
 
 .column2{
@@ -141,11 +140,12 @@ nav ul li:hover{
     margin: auto;
     padding-left: 10px;
     padding-right: 10px;
+    
 }
 
 .title{
     text-align: center;
-    margin:0 auto 80px;
+    margin:0 auto 60px;
     position: relative;
     line-height: 60px;
     color: black;
@@ -154,7 +154,7 @@ nav ul li:hover{
 
 .title::after{
     content:'';
-    background: #ff523b;
+    background: white;
     width: 70px;
     height:5px;
     border-radius: 10px;
@@ -165,12 +165,13 @@ nav ul li:hover{
 }
 
 .column2 h4{
+    
     text-align: center;
     font-size: 18px;
 }
 
 .column2 p{
-    margin-top: 7px;
+    margin-top: 10px;
     text-align: center;
     font-size: 14px;
 }
@@ -178,4 +179,11 @@ nav ul li:hover{
 .column2:hover{
     transform: translateY(-10px);
     background: salmon;
+}
+
+.footer{
+    background: #000;
+    color: #8a8a8a;
+    font-size: 14px;
+    padding:60px 0 100px;
 }

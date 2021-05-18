@@ -68,8 +68,16 @@
 
 
     <div class="footer">
-
-    
+        <div class="container">
+            <div class="row">
+                <div class="footerColumn1">
+                </div>
+                <div class="footerColumn2">
+                </div>
+                <div class="footerColumn3">
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
