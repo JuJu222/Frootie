@@ -53,10 +53,16 @@ function readProdukWithId($id) {
     $conn = conn();
 
     $get = $conn->query("SELECT * FROM produk WHERE id_produk=$id");
-    $get->fetch_assoc();
+    $row = $get->fetch_assoc();
+
+    $data['id_produk'] = $row['id_produk'];
+    $data['foto_produk'] = $row['foto_produk'];
+    $data['nama_produk'] = $row['nama_produk'];
+    $data['berat_produk'] = $row['berat_produk'];
+    $data['harga_produk'] = $row['harga_produk'];
 
     mysqli_close($conn);
-    return $get;
+    return $data;
 }
 
 function updateProduk($id, $namafoto, $lokasifoto, $nama_produk, $harga_produk, $berat_produk) {

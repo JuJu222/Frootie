@@ -37,8 +37,8 @@
                         <img src="../img/<?php echo $row["foto_produk"]; ?>" width="100px" height="200px">
                     </td>
                     <td>
-                        <a href="" class="btn-hapus">Hapus</a>
-                        <a href="" class="btn-update">Ubah</a>
+                    <a href="product_delete.php?id_produk=<?= $row['id_produk'];?>" class="btn-hapus">Hapus</a>
+                        <a href="product_update.php?id_produk=<?= $row['id_produk'];?>" class="btn-update">Ubah</a>
                     </td>
                 </tr>
                 <?php $nomor++;
@@ -46,7 +46,7 @@
         </tbody>
     </table>
 
-    <a href="" class="btn-tambahproduk">Tambah Produk</a>
+    <a href="product_tambah.php" class="btn-tambahproduk">Tambah Produk</a>
 </body>
 
 </html>
