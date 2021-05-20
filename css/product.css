@@ -41,3 +41,10 @@
     border-color: green;
 
 }
+
+.btn-tambahproduk{
+    color: #fff;
+    background-color: blue;
+    border-color: blue;
+    border-radius: 20px;
+}

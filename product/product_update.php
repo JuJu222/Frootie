@@ -34,7 +34,7 @@
      <input type="text" class="form-input" name="berat_produk" value="<?php echo $row['berat_produk'];?>">
     </div>
     <div class="form-outer">
-      <img src="../img/<?php echo $row['foto produk']?>" width="200px">
+      <img src="../img/<?php echo $row['foto_produk']?>" width="200px">
     </div>
     <div class="form-outer">
         <label>Ganti Foto Produk</label>
