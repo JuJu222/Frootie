@@ -52,6 +52,7 @@ if(isset($_POST['update'])) {
   updateProduk($id, $foto_produk['name'], $foto['tmp_name'], $_POST['nama_produk'], $_POST['harga_produk'], $_POST['berat_produk']);
 
   //balik ke halaman utama
-  echo "<script>location = 'index.php?halaman=produk';</script>";
+  echo "<script>alert('Produk Telah Diupdate');</script>";
+  echo "<script>location='product_admin.php';</script>";
 }
 ?>

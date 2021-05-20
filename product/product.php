@@ -34,27 +34,33 @@ include "product_controller.php";
             </div>
         </div>
     </div>
-    <div class="row">
-        <?php
+    <div class="containers">
+        <div class="row2">
+            <?php
             $perproduk = readProduk();
             foreach ($perproduk as $key => $item) { ?>
-            <div class="column5">
-                <img src="img/<?php echo $item['foto_produk']; ?>" alt="">
-                <h4><?php echo $item['nama_produk']; ?></h4>
-                <p><?php echo number_format($item['harga_produk']); ?></p>
-            </div>
-    </div>
-        <div class="footer">
-        <div class="container">
-            <div class="row">
-                <div class="footerColumn1">
+                <div class="column5">
+                    <div class="picture"></div>
+                    <img src="../img/<?php echo $item['foto_produk']; ?>" alt="">
+                    <h4><?php echo $item['nama_produk']; ?></h4>
+                    <p><?php echo number_format($item['harga_produk']); ?></p>
+                    </div>
+                    
                 </div>
-                <div class="footerColumn2">
-                </div>
-                <div class="footerColumn3">
-                </div>
-            </div>
         </div>
     </div>
 
 <?php } ?>
+
+<!-- <div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footerColumn1">
+            </div>
+            <div class="footerColumn2">
+            </div>
+            <div class="footerColumn3">
+            </div>
+        </div>
+    </div>
+</div> -->

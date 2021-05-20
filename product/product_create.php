@@ -45,6 +45,7 @@ if(isset($_POST["simpan"])){
     createProduk($nama, $lokasi, $nama_produk, $harga_produk, $berat_produk);
 
     //Refresh ke admin page produk (index.php?halaman=produk) tolong diganti
-    echo "<meta http-equiv='refresh' content='1;url=index.php?halaman=produk'>";
+    echo "<script>alert('Produk telah Ditambahkan');</script>";
+    echo "<meta http-equiv='refresh' content='1;url=product_admin.php'>";
 }
 ?>
