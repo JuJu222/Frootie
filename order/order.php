@@ -12,7 +12,7 @@
 </head>
 <body>
     <?php
-        include "controllers/order_controller.php";
+        include "order_controller.php";
 
         session_start();
         $_SESSION["user_id"] = 2;

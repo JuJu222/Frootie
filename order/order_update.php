@@ -1,5 +1,5 @@
 <?php
-include "controllers/order_controller.php";
+include "order_controller.php";
 
 $data = readDataWithId($_GET["order_id"]);
 ?>
