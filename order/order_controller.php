@@ -41,7 +41,6 @@
 
         $datas = $result->fetch_assoc();
 
-        print_r($datas);
         mysqli_close($conn);
         return $datas;
     }
