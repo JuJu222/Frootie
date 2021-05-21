@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2021 at 02:52 PM
+-- Generation Time: May 19, 2021 at 03:11 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `orders` (
-  `order_id` int(11) NOT NULL,
-  `user_id` int(11) NOT NULL,
-  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-  `message` text NOT NULL
+                          `order_id` int(11) NOT NULL,
+                          `user_id` int(11) NOT NULL,
+                          `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+                          `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -45,23 +45,16 @@ INSERT INTO `orders` (`order_id`, `user_id`, `date`, `message`) VALUES
 -- --------------------------------------------------------
 
 --
--- Table structure for table `products`
+-- Table structure for table `produk`
 --
 
-CREATE TABLE `products` (
-  `product_id` int(11) NOT NULL,
-  `product_name` varchar(200) NOT NULL,
-  `quantity` int(11) NOT NULL,
-  `price` float NOT NULL
+CREATE TABLE `produk` (
+                          `id_produk` int(11) NOT NULL,
+                          `nama_produk` varchar(100) NOT NULL,
+                          `harga_produk` int(11) NOT NULL,
+                          `berat_produk` int(11) NOT NULL,
+                          `foto_produk` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `products`
---
-
-INSERT INTO `products` (`product_id`, `product_name`, `quantity`, `price`) VALUES
-(5, 'Apple', 10, 10000),
-(6, 'Orange', 20, 20000);
 
 -- --------------------------------------------------------
 
@@ -70,10 +63,10 @@ INSERT INTO `products` (`product_id`, `product_name`, `quantity`, `price`) VALUE
 --
 
 CREATE TABLE `users` (
-  `user_id` int(11) NOT NULL,
-  `name` varchar(200) NOT NULL,
-  `email` varchar(200) NOT NULL,
-  `password` varchar(200) NOT NULL
+                         `user_id` int(11) NOT NULL,
+                         `name` varchar(200) NOT NULL,
+                         `email` varchar(200) NOT NULL,
+                         `password` varchar(200) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -92,20 +85,20 @@ INSERT INTO `users` (`user_id`, `name`, `email`, `password`) VALUES
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-  ADD PRIMARY KEY (`order_id`),
-  ADD KEY `user_id` (`user_id`);
+    ADD PRIMARY KEY (`order_id`),
+    ADD KEY `user_id` (`user_id`);
 
 --
--- Indexes for table `products`
+-- Indexes for table `produk`
 --
-ALTER TABLE `products`
-  ADD PRIMARY KEY (`product_id`);
+ALTER TABLE `produk`
+    ADD PRIMARY KEY (`id_produk`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`user_id`);
+    ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -115,19 +108,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+    MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
 
 --
--- AUTO_INCREMENT for table `products`
+-- AUTO_INCREMENT for table `produk`
 --
-ALTER TABLE `products`
-  MODIFY `product_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+ALTER TABLE `produk`
+    MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+    MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- Constraints for dumped tables
@@ -137,7 +130,7 @@ ALTER TABLE `users`
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
-  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+    ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
