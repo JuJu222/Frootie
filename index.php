@@ -24,10 +24,11 @@
         </div>
     </div>
 </div>
-
+<div class="line"></div>
 <!----------- Featured Categories---------------->
 <div class="categories">
     <div class="smallContainer">
+        <div class="space"></div>
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="column2">
