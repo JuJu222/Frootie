@@ -24,7 +24,6 @@
         </div>
     </div>
 </div>
-<div class="line"></div>
 <!----------- Featured Categories---------------->
 <div class="categories">
     <div class="smallContainer">
