@@ -22,6 +22,7 @@ body {
 
 .navigationbar {
     display: flex;
+    position: sticky;
     align-items: center;
     padding: 5px;
     background-color: black;
