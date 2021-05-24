@@ -1,0 +1,44 @@
+body .registerUI {
+    float: left;
+    background: #ffffff;
+    border-radius: 25px;
+    width: 400px;
+    height: 500px;
+    margin-top: 5%;
+    margin-bottom: 2.5%;
+    margin-left: 37.5%;
+}
+
+body {
+    background: linear-gradient(#fff7f5, #ffccbb);
+}
+
+body .registerUI .registerForm ul {
+    list-style-type: none;
+}
+
+body .registerUI .registerForm ul li {
+    padding: 15px;
+}
+
+body .registerUI .registerForm {
+    margin-left: 26%;
+}
+
+.logoRegister img {
+    height: 80px;
+    transition: 400ms;
+}
+
+body .registerUI .registerForm ul li:nth-child(5) {
+    margin-left: 17.5%;
+}
+
+.logoRegister {
+    margin-top: 10%;
+    margin-left: 27.5%;
+}
+
+.logoRegister img:hover {
+    filter: brightness(125%);
+}

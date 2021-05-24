@@ -12,3 +12,4 @@
         //    call conn with $conn = conn();
         //    close conn with mysqli_close($conn);
     }
+?>
