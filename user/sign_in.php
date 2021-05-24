@@ -7,11 +7,11 @@
 </head>
 <body>
     <?php include "../templates/navbar.php"?>
-    <div class="registerUI">
+    <div class="loginUI">
         <div class="logoRegister">
             <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
         </div>
-        <div class="registerForm">
+        <div class="loginForm">
         <form action="" method="POST">
             <ul>
                 <li>
@@ -23,15 +23,7 @@
                     <input type="password" name="password" id="password">
                 </li>
                 <li>
-                    <h4>Confirm Password</h4>
-                    <input type="password" name="passwordConfirm" id="passwordConfirm">
-                </li>
-                <li>
-                    <h4>Email</h4>
-                    <input type="text" name="email" id="email">
-                </li>
-                <li>
-                    <button type="submit" name="register">Register</button>
+                    <button type="submit" name="register">Login</button>
                 </li>
             </ul>
         </form>

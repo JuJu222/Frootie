@@ -6,7 +6,7 @@ body .registerUI {
     height: 500px;
     margin-top: 5%;
     margin-bottom: 2.5%;
-    margin-left: 37.5%;
+    margin-left: 38.5%;
 }
 
 body {
@@ -22,7 +22,7 @@ body .registerUI .registerForm ul li {
 }
 
 body .registerUI .registerForm {
-    margin-left: 26%;
+    margin-left: 28.5%;
 }
 
 .logoRegister img {
@@ -31,7 +31,7 @@ body .registerUI .registerForm {
 }
 
 body .registerUI .registerForm ul li:nth-child(5) {
-    margin-left: 17.5%;
+    margin-left: 15%;
 }
 
 .logoRegister {

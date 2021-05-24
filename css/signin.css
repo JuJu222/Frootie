@@ -1,42 +1,45 @@
-body .registerUI {
+body .loginUI {
     float: left;
     background: #ffffff;
     border-radius: 25px;
-    width: 400px;
-    height: 500px;
-    margin-top: 5%;
+    width: 500px;
+    height: 300px;
+    margin-top: 10%;
     margin-bottom: 2.5%;
-    margin-left: 37.5%;
+    margin-left: 35%;
 }
 
 body {
-    background: linear-gradient(#ff4c3f, #ffb293);
+    background: linear-gradient(#31a84b, #ffb293);
 }
 
-body .registerUI .registerForm ul {
+.loginUI .loginForm {
+    margin-top: 1.5%;
+    margin-left: 35%;
+}
+
+.loginUI ul {
     list-style-type: none;
 }
 
-body .registerUI .registerForm ul li {
-    padding: 15px;
+.loginUI ul li {
+    padding: 7.5px;
 }
 
-body .registerUI .registerForm {
-    margin-left: 26%;
+.loginUI ul li:nth-child(3) {
+    padding-top: 20px;
+    margin-left: 16%;
 }
 
 .logoRegister img {
     height: 80px;
     transition: 400ms;
-}
-
-body .registerUI .registerForm ul li:nth-child(5) {
-    margin-left: 17.5%;
+    margin-left: 1%;
 }
 
 .logoRegister {
-    margin-top: 10%;
-    margin-left: 27.5%;
+    margin-top: 5%;
+    margin-left: 32.5%;
 }
 
 .logoRegister img:hover {
