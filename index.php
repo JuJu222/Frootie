@@ -31,17 +31,17 @@
         <h2 class="title">Featured Products</h2>
         <div class="row">
             <div class="column2">
-                <img src="img/apple.jpg">
+                <img src="img/apple.png">
                 <h4>Apple</h4>
                 <p>Rp. 8.000</p>
             </div>
             <div class="column2">
-                <img src="img/pineapple.jpg">
+                <img src="img/pineapple.png">
                 <h4>Pineapple</h4>
                 <p>Rp. 15.000</p>
             </div>
             <div class="column2">
-                <img src="img/grapes.jpg">
+                <img src="img/grapes.png">
                 <h4>Grapes</h4>
                 <p>Rp. 20.000</p>
             </div>
