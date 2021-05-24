@@ -1,3 +1,16 @@
+<?php
+    require 'user_controller.php';
+    $conn = conn();
+    if (isset($_POST["login"])){
+        if (login($_POST) == true){
+            $error = false;
+        }
+        else{
+            $error = true;
+            echo mysqli_error($conn);
+        }
+    }
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -23,8 +36,16 @@
                     <input type="password" name="password" id="password">
                 </li>
                 <li>
-                    <button type="submit" name="register">Login</button>
+                    <button type="submit" name="login">Login</button>
                 </li>
+                <?php
+                    if (isset($error)) : ?>
+                    <li class="loginError">
+                        <h3>Login Credentials Not Found!</h3>
+                    </li>
+                <?php
+                    endif;
+                ?>
             </ul>
         </form>
         </div>
