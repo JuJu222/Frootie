@@ -51,6 +51,5 @@ if (isset($_POST["register"])){
         </form>
         </div>
     </div>
-
 </body>
 </html>
