@@ -1,0 +1,51 @@
+body .loginUI {
+    float: left;
+    background: #ffffff;
+    border-radius: 25px;
+    width: 500px;
+    height: 300px;
+    margin-top: 10%;
+    margin-bottom: 2.5%;
+    margin-left: 35%;
+}
+
+body {
+    background: linear-gradient(#31a84b, #ffb293);
+}
+
+.loginUI .loginForm {
+    margin-top: 1.5%;
+    margin-left: 35%;
+}
+
+.loginUI ul {
+    list-style-type: none;
+}
+
+.loginUI ul li {
+    padding: 7.5px;
+}
+
+.loginUI ul li:nth-child(3) {
+    padding-top: 20px;
+    margin-left: 16%;
+}
+
+.logoRegister img {
+    height: 80px;
+    transition: 400ms;
+    margin-left: 1%;
+}
+
+.loginError {
+    /*Editin dong - kenny*/
+}
+
+.logoRegister {
+    margin-top: 5%;
+    margin-left: 32.5%;
+}
+
+.logoRegister img:hover {
+    filter: brightness(125%);
+}

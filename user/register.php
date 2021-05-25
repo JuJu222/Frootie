@@ -33,6 +33,10 @@ if (isset($_POST["register"])){
                     <input type="text" name="username" id="username">
                 </li>
                 <li>
+                    <h4>Name</h4>
+                    <input type="text" name="name" id="name">
+                </li>
+                <li>
                     <h4>Password</h4>
                     <input type="password" name="password" id="password">
                 </li>
