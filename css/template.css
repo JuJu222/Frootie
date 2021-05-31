@@ -26,31 +26,99 @@ body {
     align-items: center;
     padding: 5px;
     background-color: black;
+
 }
 
-nav {
+.navigationbar nav {
     flex: 1;
     text-align: right;
 }
 
-nav ul {
+.navigationbar nav ul {
     display: inline-block;
-    margin-right: 70px;
     list-style-type: none;
 }
 
-nav ul li {
+.navigationbar nav ul li {
     display: inline-block;
+    margin-right: 20px;
     transition: transform 0.5s;
 }
 
-nav a {
+.navigationbar nav a {
     text-decoration: none;
     color: white;
     font-weight: bold;
     padding: 40px;
 }
 
-nav ul li:hover {
+.navigationbar nav ul li:hover {
     transform: translateY(5px);
 }
+
+.menu-icon{
+    width: 28px;
+    margin-right: 10px;
+    display: none;
+}
+
+
+
+/* media query */
+
+@media only screen and (max-width: 800px){
+    .navigationbar nav ul{
+        position: absolute;
+        top:70px;
+        left: 0;
+        background:#333;
+        width:100%;
+        overflow: hidden;
+        transition: max-height 0.5s;
+
+    }
+
+    .navigationbar nav ul li{
+        display:block;
+        margin-right:50px;
+        margin-top:10px;
+        margin-bottom:10px;
+
+    }
+
+    .navigationbar nav a {
+        text-decoration: none;
+        color: white;
+        font-weight: bold;
+        padding: 0px;
+    }
+
+    .navigationbar nav ul li a{
+        color:#fff;
+
+    }
+
+    .menu-icon{
+        display:block;
+        cursor:pointer;
+    }
+
+
+
+   
+    
+
+}
+
+    @media only screen and (max-width:600px){
+        .row{
+            text-align:center;
+        }
+
+        .column, .column2{
+            flex-basis: 100%;
+        }
+
+
+    }
+

@@ -172,3 +172,15 @@ p {
 h4 {
     text-align: center;
 }
+
+@media only screen and (max-width:600px){
+    .row{
+        text-align:center;
+    }
+
+    .column, .column2{
+        flex-basis: 100%;
+    }
+
+
+}
