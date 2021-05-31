@@ -3,7 +3,7 @@
         <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
     </div>
     <nav>
-        <ul>
+        <ul id= "Items">
             <li><a href="/frootie/index.php">Home</a></li>
             <li><a href="/frootie/product/product.php">Products</a></li>
             <li><a href="/frootie/order/order.php">Order</a></li>
@@ -12,4 +12,21 @@
             <li><a href="/frootie/user/register.php">Register</a></li>
         </ul>
     </nav>
+     <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
 </div>
+
+
+<script>
+    var Items = document.getElementById("Items");
+
+    Items.style.maxHeight = "0px";
+
+    function menutoggle(){
+        if(Items.style.maxHeight == "0px"){
+            Items.style.maxHeight = "200px";
+        }
+        else{
+            Items.style.maxHeight = "0px";
+        }
+    }
+</script>

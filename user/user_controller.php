@@ -51,7 +51,8 @@
             $row = mysqli_fetch_assoc($usernameCheck);
             if (password_verify($password, $row["password"])){
                 session_start();
-                $_SESSION["customerName"] = $row["name"];
+                $_SESSION["user_id"] = $row["user_id"];
+                $_SESSION["name"] = $row["name"];
                 header("Location: http://localhost/Frootie/index.php");
                 exit;
                 //Login Berhasil

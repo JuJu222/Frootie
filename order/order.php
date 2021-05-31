@@ -11,13 +11,12 @@
         include "../templates/navbar.php";
 
         session_start();
-        $_SESSION["user_id"] = 2;
     ?>
     <div class="order-input">
         <form method="post" action="order.php">
             <label>
                 Message
-                <textarea name="message"></textarea>
+                <textarea name="message" placeholder="Leave your order here..."></textarea>
             </label>
             <br>
             <input type="submit" value="Submit" name="submit">
