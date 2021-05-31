@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 19, 2021 at 03:11 PM
+-- Generation Time: May 31, 2021 at 03:11 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 7.3.27
 
@@ -28,10 +28,10 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `orders` (
-                          `order_id` int(11) NOT NULL,
-                          `user_id` int(11) NOT NULL,
-                          `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
-                          `message` text NOT NULL
+  `order_id` int(11) NOT NULL,
+  `user_id` int(11) NOT NULL,
+  `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
+  `message` text NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
@@ -40,7 +40,7 @@ CREATE TABLE `orders` (
 
 INSERT INTO `orders` (`order_id`, `user_id`, `date`, `message`) VALUES
 (9, 3, '2021-05-17 03:48:17', 'adadadada'),
-(37, 2, '2021-05-19 12:11:40', 'accc');
+(40, 2, '2021-05-21 04:44:55', 'baaa');
 
 -- --------------------------------------------------------
 
@@ -49,12 +49,20 @@ INSERT INTO `orders` (`order_id`, `user_id`, `date`, `message`) VALUES
 --
 
 CREATE TABLE `produk` (
-                          `id_produk` int(11) NOT NULL,
-                          `nama_produk` varchar(100) NOT NULL,
-                          `harga_produk` int(11) NOT NULL,
-                          `berat_produk` int(11) NOT NULL,
-                          `foto_produk` varchar(100) NOT NULL
+  `id_produk` int(11) NOT NULL,
+  `nama_produk` varchar(100) NOT NULL,
+  `harga_produk` int(11) NOT NULL,
+  `berat_produk` int(11) NOT NULL,
+  `foto_produk` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `produk`
+--
+
+INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `berat_produk`, `foto_produk`) VALUES
+(1, 'adadadada', 1, 1, 'subscribe_PNG26.png'),
+(3, 'vb', 3, 3, 'subscribe_PNG26.png');
 
 -- --------------------------------------------------------
 
@@ -63,19 +71,22 @@ CREATE TABLE `produk` (
 --
 
 CREATE TABLE `users` (
-                         `user_id` int(11) NOT NULL,
-                         `name` varchar(200) NOT NULL,
-                         `email` varchar(200) NOT NULL,
-                         `password` varchar(200) NOT NULL
+  `user_id` int(11) NOT NULL,
+  `username` varchar(30) NOT NULL,
+  `name` varchar(200) NOT NULL,
+  `password` varchar(256) NOT NULL,
+  `email` varchar(200) NOT NULL,
+  `status` varchar(30) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 --
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `name`, `email`, `password`) VALUES
-(2, 'Justin', 'justin@gmail.com', 'justin'),
-(3, 'A', 'A', 'A');
+INSERT INTO `users` (`user_id`, `username`, `name`, `password`, `email`, `status`) VALUES
+(2, '', 'Justin', 'justin', 'justin@gmail.com', ''),
+(3, '', 'A', 'A', 'A', ''),
+(4, 'justin', 'justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -85,20 +96,20 @@ INSERT INTO `users` (`user_id`, `name`, `email`, `password`) VALUES
 -- Indexes for table `orders`
 --
 ALTER TABLE `orders`
-    ADD PRIMARY KEY (`order_id`),
-    ADD KEY `user_id` (`user_id`);
+  ADD PRIMARY KEY (`order_id`),
+  ADD KEY `user_id` (`user_id`);
 
 --
 -- Indexes for table `produk`
 --
 ALTER TABLE `produk`
-    ADD PRIMARY KEY (`id_produk`);
+  ADD PRIMARY KEY (`id_produk`);
 
 --
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
-    ADD PRIMARY KEY (`user_id`);
+  ADD PRIMARY KEY (`user_id`);
 
 --
 -- AUTO_INCREMENT for dumped tables
@@ -108,19 +119,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-    MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=38;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
 
 --
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-    MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-    MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- Constraints for dumped tables
@@ -130,7 +141,7 @@ ALTER TABLE `users`
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
-    ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
