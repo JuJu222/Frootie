@@ -3,9 +3,13 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
+<<<<<<< Updated upstream
 -- Generation Time: May 19, 2021 at 03:11 PM
+=======
+-- Generation Time: May 31, 2021 at 05:28 AM
+>>>>>>> Stashed changes
 -- Server version: 10.4.18-MariaDB
--- PHP Version: 7.3.27
+-- PHP Version: 8.0.3
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,8 +43,12 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `date`, `message`) VALUES
+<<<<<<< Updated upstream
 (9, 3, '2021-05-17 03:48:17', 'adadadada'),
 (37, 2, '2021-05-19 12:11:40', 'accc');
+=======
+(9, 3, '2021-05-17 03:48:17', 'adadadada');
+>>>>>>> Stashed changes
 
 -- --------------------------------------------------------
 
@@ -73,9 +81,16 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
+<<<<<<< Updated upstream
 INSERT INTO `users` (`user_id`, `name`, `email`, `password`) VALUES
 (2, 'Justin', 'justin@gmail.com', 'justin'),
 (3, 'A', 'A', 'A');
+=======
+INSERT INTO `users` (`user_id`, `username`, `name`, `password`, `email`, `status`) VALUES
+(3, '', 'Kevin Sander', 'A', 'ksu@gmail.com', ''),
+(4, 'justin', 'justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer'),
+(5, 'admin', 'Admin Frootie', '$2y$10$WB56QPkD4XhTR.zbhZStDex064LnifC9ZxCEIK03g7I8lHSfUoZcC', 'admin@frootie.com', 'admin');
+>>>>>>> Stashed changes
 
 --
 -- Indexes for dumped tables
@@ -120,7 +135,11 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
+<<<<<<< Updated upstream
     MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+=======
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+>>>>>>> Stashed changes
 
 --
 -- Constraints for dumped tables
@@ -130,7 +149,11 @@ ALTER TABLE `users`
 -- Constraints for table `orders`
 --
 ALTER TABLE `orders`
+<<<<<<< Updated upstream
     ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`);
+=======
+  ADD CONSTRAINT `orders_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `users` (`user_id`) ON DELETE CASCADE ON UPDATE CASCADE;
+>>>>>>> Stashed changes
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

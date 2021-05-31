@@ -61,4 +61,44 @@
         $error = true;
         return $error;
     }
+
+    function getData(){
+        $conn = conn();
+        $result = mysqli_query($conn, "SELECT * FROM users");
+        
+        //Ambil data dari query
+        return $result;
+    }
+
+    function deleteData($id){
+        $conn = conn();
+        mysqli_query($conn, "DELETE FROM users WHERE user_id = $id");
+        return mysqli_affected_rows($conn);
+    }
+
+    function editData($data){
+        $conn = conn();
+        $name = stripslashes($data["name"]);
+        $email = $data["email"];
+        $id = $data["id"];
+    
+        $checkEmail = mysqli_query($conn, "SELECT email FROM users WHERE email = '$email'");
+        if (mysqli_fetch_assoc($checkEmail)){
+            echo "<script>
+                    alert('Email has already been taken!')
+                 </script>";
+            return false;
+        }
+
+        $checkName = mysqli_query($conn, "SELECT name FROM users WHERE name = '$name'");
+        if (mysqli_fetch_assoc($checkName)){
+            echo "<script>
+                    alert('Name has already been taken!')
+                 </script>";
+            return false;
+        }
+
+        mysqli_query($conn, "UPDATE users SET name = '$name', email = '$email' WHERE user_id = $id");
+        return mysqli_affected_rows($conn);
+    }
 ?>
