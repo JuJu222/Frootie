@@ -36,6 +36,7 @@ function readProduk() {
     $perproduk = array();
     if ($result->num_rows > 0) {
         while ($row = $result->fetch_assoc()) {
+            $temp['id_produk'] = $row['id_produk'];
             $temp['foto_produk'] = $row['foto_produk'];
             $temp['nama_produk'] = $row['nama_produk'];
             $temp['berat_produk'] = $row['berat_produk'];
