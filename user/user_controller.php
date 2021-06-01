@@ -45,6 +45,7 @@
                 $_SESSION["user_id"] = $row["user_id"];
                 $_SESSION["name"] = $row["name"];
                 $_SESSION["email"] = $row["email"];
+                $_SESSION["status"] = $row["status"];
                 header("Location: http://localhost/Frootie/index.php");
                 exit;
                 //Login Berhasil
