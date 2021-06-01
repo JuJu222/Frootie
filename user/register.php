@@ -47,6 +47,7 @@ if (isset($_POST["register"])){
                 <li>
                     <button type="submit" name="register">Register</button>
                 </li>
+                <a href="/frootie/user/sign_in.php">Have an account already? Sign in here!</a>
             </ul>
         </form>
         </div>
