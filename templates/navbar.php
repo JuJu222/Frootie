@@ -20,10 +20,7 @@
             <li><a href="/frootie/user/log_out.php">Log Out</a></li>
             <?php } else { ?>
             <li><a href="/frootie/user/sign_in.php">Sign In</a></li>
-            <li><a href="/frootie/user/register.php">Register</a></li>
-            <?php if(isset($_SESSION['name'])) :  ?>
-            <li><a href="/frootie/user/log_out.php">Log Out</li>
-            <?php endif;?>
+            <?php } ?>
         </ul>
     </nav>
      <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
