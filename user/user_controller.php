@@ -73,7 +73,21 @@
         $name = stripslashes($data["name"]);
         $email = $data["email"];
         $id = $data["id"];
-    
+        
+        if ($email == ''){
+            echo "<script>
+                    alert('Fill the e-mail text box!')
+                 </script>";
+            return false;
+        }
+
+        if ($name == ''){
+            echo "<script>
+                    alert('Fill the name text box!')
+                 </script>";
+            return false;
+        }
+
         $checkEmail = mysqli_query($conn, "SELECT email FROM users WHERE email = '$email'");
         if (mysqli_fetch_assoc($checkEmail)){
             echo "<script>
