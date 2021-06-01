@@ -14,10 +14,8 @@
     ?>
     <div class="order-input">
         <form method="post" action="order.php">
-            <label>
-                Message
-                <textarea name="message" placeholder="Leave your order here..."></textarea>
-            </label>
+            <h3>Message</h3>
+            <textarea name="message" placeholder="Leave your order here..."></textarea>
             <br>
             <input type="submit" value="Submit" name="submit">
             <?php
@@ -38,8 +36,8 @@
                     <p><?= $data["name"] ?></p>
                     <p><?= $data["date"] ?></p>
                     <p><?= $data["message"] ?></p>
-                    <p><a href="order_update.php?order_id=<?= $data["order_id"] ?>">Change message</a></p>
-                    <p><a href="order_delete.php?order_id=<?= $data["order_id"] ?>">X</a></p>
+                    <p><a class="button-change" href="order_update.php?order_id=<?= $data["order_id"] ?>">Change message</a>
+                    <a class="button-delete" href="order_delete.php?order_id=<?= $data["order_id"] ?>">X</a>
                 </div>
             <?php } } ?>
         <h3>All Orders</h3>
