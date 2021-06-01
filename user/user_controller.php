@@ -2,7 +2,6 @@
     require '../main_controller.php';
     function register($data){
         $conn = conn();
-        $username = stripslashes($data["username"]);
         $name = stripslashes($data["name"]);
         $password = mysqli_real_escape_string($conn, $data["password"]);
         $passwordConfirm = mysqli_real_escape_string($conn, $data["passwordConfirm"]);
@@ -24,31 +23,23 @@
             return false;
         }
 
-        $checkResult = mysqli_query($conn, "SELECT username FROM users WHERE username = '$username'");
-        if (mysqli_fetch_assoc($checkResult)){
-            echo "<script>
-                    alert('Username has already been taken!')
-                 </script>";
-            return false;
-        }
-
         $status = "customer";
         $password = password_hash($password, PASSWORD_DEFAULT);
 
-        mysqli_query($conn, "INSERT INTO users VALUES('','$username','$name','$password','$email','$status')");
+        mysqli_query($conn, "INSERT INTO users VALUES('','$name','$password','$email','$status')");
         return mysqli_affected_rows($conn);
     }
 
     function login($data){
         $error = false;
         $conn = conn();
-        $username = $_POST["username"];
+        $email = $_POST["email"];
         $password = $_POST["password"];
 
-        $usernameCheck = mysqli_query($conn, "SELECT * FROM users WHERE username = '$username'");
-        if (mysqli_num_rows($usernameCheck) == 1){
-            //Username Check Berhasil, Check Password
-            $row = mysqli_fetch_assoc($usernameCheck);
+        $emailCheck = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+        if (mysqli_num_rows($emailCheck) == 1){
+            //Email Check Berhasil, Check Password
+            $row = mysqli_fetch_assoc($emailCheck);
             if (password_verify($password, $row["password"])){
                 session_start();
                 $_SESSION["user_id"] = $row["user_id"];
@@ -58,7 +49,7 @@
                 //Login Berhasil
             }
         }
-        //Username salah atau password salah, logika turun
+        //Email salah atau password salah, logika turun
         $error = true;
         return $error;
     }
