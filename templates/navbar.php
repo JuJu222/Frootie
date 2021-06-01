@@ -9,8 +9,14 @@
             <li><a href="/frootie/order/order.php">Order</a></li>
             <li><a href="/frootie/contact.php">Contact Us</a></li>
             <?php
-            session_start();
-            if (isset($_SESSION['name'])) {  ?>
+            session_start(); 
+            ?>
+            <?php
+            if (isset($_SESSION['name'])) { 
+                $name = $_SESSION['name']; 
+                if ($_SESSION['status'] == 'admin') {?>
+                <li><a href="/frootie/user/user_edit.php">Users</a></li>
+                <?php }?>
             <li><a href="/frootie/user/log_out.php">Log Out</a></li>
             <?php } else { ?>
             <li><a href="/frootie/user/sign_in.php">Sign In</a></li>

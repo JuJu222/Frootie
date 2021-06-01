@@ -31,7 +31,6 @@
     <tr>
         <td><?php echo $row["user_id"]; ?></td>
         <td><?php echo $row["name"]; ?></td>
-        <td><?php echo $row["username"]; ?></td>
         <td><?php echo $row["email"]; ?></td>
         <td><a href="edit.php?id=<?=$row["user_id"];?>">Edit</a></td>
         <td><a href="delete.php?id=<?=$row["user_id"];?>" onclick="return confirm('Apakah benar anda mau delete?');">Delete</a></td>
