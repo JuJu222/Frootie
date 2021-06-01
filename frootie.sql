@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 31, 2021 at 05:28 AM
+-- Generation Time: Jun 01, 2021 at 09:22 AM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -71,7 +71,6 @@ INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `berat_produk`
 
 CREATE TABLE `users` (
   `user_id` int(11) NOT NULL,
-  `username` varchar(30) NOT NULL,
   `name` varchar(200) NOT NULL,
   `password` varchar(256) NOT NULL,
   `email` varchar(200) NOT NULL,
@@ -82,10 +81,10 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`user_id`, `username`, `name`, `password`, `email`, `status`) VALUES
-(3, '', 'Kevin Sander', 'A', 'ksu@gmail.com', ''),
-(4, 'justin', 'justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer'),
-(5, 'admin', 'Admin Frootie', '$2y$10$WB56QPkD4XhTR.zbhZStDex064LnifC9ZxCEIK03g7I8lHSfUoZcC', 'admin@frootie.com', 'admin');
+INSERT INTO `users` (`user_id`, `name`, `password`, `email`, `status`) VALUES
+(3, 'Kevin Sander', 'A', 'ksu@gmail.com', ''),
+(4, 'justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer'),
+(5, 'Admin Frootie', '$2y$10$WB56QPkD4XhTR.zbhZStDex064LnifC9ZxCEIK03g7I8lHSfUoZcC', 'admin@frootie.com', 'admin');
 
 --
 -- Indexes for dumped tables

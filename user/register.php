@@ -29,8 +29,8 @@ if (isset($_POST["register"])){
         <form action="" method="POST">
             <ul>
                 <li>
-                    <h4>Username</h4>
-                    <input type="text" name="username" id="username">
+                    <h4>Email</h4>
+                    <input type="text" name="email" id="email">
                 </li>
                 <li>
                     <h4>Name</h4>
@@ -43,10 +43,6 @@ if (isset($_POST["register"])){
                 <li>
                     <h4>Confirm Password</h4>
                     <input type="password" name="passwordConfirm" id="passwordConfirm">
-                </li>
-                <li>
-                    <h4>Email</h4>
-                    <input type="text" name="email" id="email">
                 </li>
                 <li>
                     <button type="submit" name="register">Register</button>

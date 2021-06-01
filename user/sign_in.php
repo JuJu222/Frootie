@@ -28,8 +28,8 @@
         <form action="" method="POST">
             <ul>
                 <li>
-                    <h4>Username</h4>
-                    <input type="text" name="username" id="username">
+                    <h4>Email</h4>
+                    <input type="text" name="email" id="email">
                 </li>
                 <li>
                     <h4>Password</h4>

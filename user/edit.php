@@ -33,11 +33,6 @@ if (isset($_POST["edit"])){
         <form action="" method="POST">
             <ul>
                 <li>
-                    <h4>Username</h4>
-                    <input type="text" name="username" id="username" value="<?=$row['username'];?>" readonly>
-                    <h4>Username cannot be changed</h4>
-                </li>
-                <li>
                     <h4>ID</h4>
                     <input type="text" name="id" id="id" value="<?=$row['user_id'];?>" readonly>
                 </li>
