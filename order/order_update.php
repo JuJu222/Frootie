@@ -12,13 +12,14 @@
 
         $data = readDataWithId($_GET["order_id"]);
     ?>
-    <form method="POST" action="order_update.php?order_id=<?= $_GET["order_id"] ?>">
-        <label>Message
-            <textarea name="message"><?= $data["message"] ?></textarea>
-        </label>
-        <br>
-        <input type="submit" name="submit">
-    </form>
+    <div class="order-input">
+        <form method="POST" action="order_update.php?order_id=<?= $_GET["order_id"] ?>">
+            <h3>Change Message</h3>
+                <textarea name="message"><?= $data["message"] ?></textarea>
+            <br>
+            <input type="submit" name="submit">
+        </form>
+    </div>
 </body>
 </html>
 
