@@ -16,7 +16,7 @@
                 <h1>Try Out Our New <br>Fresh Fruits!</h1>
                 <p>Our fruits are 100% authentic, breeded, and harvested from <br>
                     the best selection of greenhouses in Indonesia.
-                    <br><a href="" class="button">See Our Products</a>
+                    <br><a href="/frootie/product/product.php" class="button">See Our Products</a>
             </div>
             <div class="column">
                 <img src="img/fruits.png">
