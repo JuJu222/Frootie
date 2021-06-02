@@ -12,14 +12,19 @@
 
         $data = readDataWithId($_GET["order_id"]);
     ?>
+    <div class="spaceTitle"></div>
+    <h2 class="title title-order">Product Orders</h2>
     <div class="order-input">
         <form method="POST" action="order_update.php?order_id=<?= $_GET["order_id"] ?>">
-            <h3>Change Message</h3>
+            <h2>Change Message</h2>
                 <textarea name="message"><?= $data["message"] ?></textarea>
             <br>
-            <input type="submit" name="submit">
+            <input type="submit" name="submit" value="Submit">
         </form>
     </div>
+
+    <?php         include "../templates/footer.php" ; ?>
+
 </body>
 </html>
 

@@ -7,9 +7,12 @@
 </head>
 <body>
     <?php
-        include "order_controller.php";
-        include "../templates/navbar.php";
-    ?>
+    include "order_controller.php";
+    include "../templates/navbar.php";
+
+    if ($_SESSION['status'] != 'admin') {
+        echo "You do not have access to this page.";
+    } else { ?>
     <div class="spaceTitle"></div>
     <h2 class="title title-order">All Orders</h2>
     <div class="orders">
@@ -25,5 +28,9 @@
                 </div>
             <?php } ?>
     </div>
+    <?php }
+    include "../templates/footer.php"
+    ?>
+
 </body>
 </html>

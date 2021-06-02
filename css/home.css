@@ -52,6 +52,7 @@ p {
 }
 
 .header {
+    padding: 50px 50px 0px;
     background: linear-gradient(#ff4c3f, #ffb293);
     /*ganti balik kalau ga suka - kenny*/
     /*background: radial-gradient(#dc143d, #fa8072);*/

@@ -10,7 +10,7 @@ td {
 
 .order-input {
     width: 50%;
-    margin: auto;
+    margin: auto auto 80px;
 }
 
 textarea {

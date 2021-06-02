@@ -2,7 +2,7 @@
     <div class="container">
         <div class="footerRow">
             <div class="footerColumn1">
-                <h3>Check Out Our Website</h3>
+                <h3>Buy our fresh fruits now!</h3>
                 <p>We promise you it won't disappoint.</p>
             </div>
             <div class="footerColumn2">

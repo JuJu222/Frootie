@@ -7,10 +7,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../css/product.css">
+    <?php include "../templates/head.php"?>
 </head>
 
 <body>
-    <h2>Ubah Produk</h2>
+<?php
+include "../templates/navbar.php";
+
+if ($_SESSION['status'] != 'admin') {
+    echo "You do not have access to this page.";
+} else { ?>
+    <div class="spaceTitle"></div>
+    <h2 class="title">Ubah Produk</h2>
 
     <?php
     include "product_controller.php";
@@ -43,6 +51,9 @@
     <button class="btn-simpan" name="update">Update</button>
 
 </form>
+<?php } ?>
+    <?php include "../templates/footer.php"?>
+
 </body>
 </html>
 

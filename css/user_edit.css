@@ -1,9 +1,11 @@
-table,
-th,
-td {
-    border: 1px solid black;
+table {
+    border-collapse: collapse;
+    background: #ffdbdb;
+    border: none;
+    margin: auto auto 80px;
 }
 
-td {
-    padding: 10px;
+th, td {
+    border: 1px solid black;
+    padding: 20px;
 }

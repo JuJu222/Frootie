@@ -9,6 +9,9 @@
             <li><a href="/frootie/order/order.php">Orders</a></li>
             <li><a href="/frootie/contact.php">Contact Us</a></li>
             <?php
+//            error_reporting(0);
+//            enable ini kalau sudah selesai
+
             session_start(); 
             ?>
             <?php

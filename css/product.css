@@ -20,7 +20,7 @@ td img {
     background-color: #d9534f;
     border-color: #d43f3a;
     border-radius: 20px;
-    padding: 20px;
+    padding: 10px;
 }
 
 .btn-update{
@@ -45,6 +45,10 @@ td img {
   border-radius: 4px;
 }
 
+form {
+    width: 80%;
+    margin: auto auto 80px;
+}
 
 .form-outer{
     margin-bottom: 15px;
@@ -54,7 +58,8 @@ td img {
     color: #fff;
     background-color: green;
     border-color: green;
-
+    border-radius: 20px;
+    padding: 10px;
 }
 
 .btn-tambahproduk{

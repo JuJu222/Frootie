@@ -2,7 +2,8 @@ body .registerUI {
     background: #ffffff;
     border-radius: 25px;
     width: 400px;
-    height: 490px;
+    height: max-content;
+    padding: 20px 0;
     margin-top: 5%;
     margin-bottom: 5%;
     margin-left: 38.5%;
@@ -33,7 +34,6 @@ body .registerUI .registerForm {
 .logoRegister img {
     height: 80px;
     transition: 400ms;
-    margin-top: 10px;
 }
 
 body .registerUI .registerForm ul li:nth-child(5) {
@@ -42,7 +42,6 @@ body .registerUI .registerForm ul li:nth-child(5) {
 }
 
 .logoRegister {
-    margin-top: 10%;
     margin-left: 27.5%;
 }
 

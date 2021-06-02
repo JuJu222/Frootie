@@ -5,12 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/product.css">
+    <?php include "../templates/head.php"?>
     <title>Document</title>
 </head>
 <body>
-    <h2>Tambah Produk</h2>
+<?php
+include "../templates/navbar.php";
 
-
+if ($_SESSION['status'] != 'admin') {
+    echo "You do not have access to this page.";
+} else { ?>
+    <div class="spaceTitle"></div>
+    <h2 class="title">Tambah Produk</h2>
     <form method="POST" enctype="multipart/form-data">
     <div class="form-outer">
        <label>Nama Produk</label>
@@ -30,6 +36,10 @@
     </div>
     <button class="btn-simpan" name="simpan">Simpan</button>
 </form>
+<?php } ?>
+
+    <?php include "../templates/footer.php"?>
+
 </body>
 </html>
 <?php

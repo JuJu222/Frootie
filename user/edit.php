@@ -1,21 +1,3 @@
-
-<?php
-require 'user_controller.php';
-$conn = conn();
-$id = $_GET["id"];
-$requiredValueRead = getData();
-$row = mysqli_fetch_assoc($requiredValueRead);
-if (isset($_POST["edit"])){
-    if (editData($_POST) > 0){
-        header("Location: http://localhost/Frootie/user/user_edit.php");
-        //Kalau berhasil
-    } else {
-        //Kalau gagal
-        echo mysqli_error($conn);
-    }
-}
-
-?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -24,7 +6,27 @@ if (isset($_POST["edit"])){
     <title>Edit</title>
 </head>
 <body>
-    <?php include "../templates/navbar.php"?>
+<?php
+include "../templates/navbar.php";
+
+if ($_SESSION['status'] != 'admin') {
+    echo "You do not have access to this page.";
+} else {
+    require 'user_controller.php';
+    $conn = conn();
+    $id = $_GET["id"];
+    $requiredValueRead = getData();
+    $row = mysqli_fetch_assoc($requiredValueRead);
+    if (isset($_POST["edit"])){
+        if (editData($_POST) > 0){
+            header("Location: http://localhost/Frootie/user/user_edit.php");
+            //Kalau berhasil
+        } else {
+            //Kalau gagal
+            echo mysqli_error($conn);
+        }
+    }
+    ?>
     <div class="registerUI">
         <div class="logoRegister">
             <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
@@ -51,5 +53,8 @@ if (isset($_POST["edit"])){
         </form>
         </div>
     </div>
+<?php } ?>
+
+    <?php include "../templates/footer.php"?>
 </body>
 </html>

@@ -14,17 +14,21 @@
 </head>
 
 <body>
-<?php include "../templates/navbar.php"?>
+<?php
+include "../templates/navbar.php";
 
-<h1>Daftar User</h1>
+if ($_SESSION['status'] != 'admin') {
+    echo "You do not have access to this page.";
+} else { ?>
+
+<div class="spaceTitle"></div>
+<h2 class="title">Daftar User</h2>
 
 <table>
     <tr>
-        <th>No.</th>
+        <th>ID.</th>
         <th>Name</th>
-        <th>Username</th>
         <th>Email</th>
-        <th></th>
         <th></th>
     </tr>
     <?php while($row = mysqli_fetch_assoc($hasil)) : ?>
@@ -37,4 +41,8 @@
     </tr>
     <?php endwhile; ?>  
 </table>
+<?php } ?>
+
+<?php include "../templates/footer.php"?>
+
 </body>
