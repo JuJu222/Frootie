@@ -5,13 +5,16 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/product.css">
     <title>Document</title>
 </head>
 
 <body>
-    <h2>Data Produk</h2>
+    <?php include "../templates/navbar.php"?>
 
+    <div class="spaceTitle"></div>
+    <h2 class="title title-product-admin">Data Produk</h2>
     <table class="table-produk">
         <thead>
             <tr>
@@ -20,6 +23,7 @@
                 <th>Harga Produk</th>
                 <th>Berat Produk</th>
                 <th>Foto Produk</th>
+                <th></th>
             </tr>
         </thead>
         <tbody>
@@ -43,10 +47,15 @@
                 </tr>
                 <?php $nomor++;
                 } ?>
+        <tr>
+            <td colspan="6">    <a href="product_create.php" class="btn-tambahproduk">Tambah Produk</a></td>
+        </tr>
         </tbody>
     </table>
 
-    <a href="product_create.php" class="btn-tambahproduk">Tambah Produk</a>
+
+
+    <?php include "../templates/footer.php"?>
 </body>
 
 </html>

@@ -46,12 +46,15 @@
                 <?php
                     endif;
                 ?>
-                <li>
-                    <a href="/frootie/user/register.php">Need an account? Sign up now!</a>
-                </li>
             </ul>
         </form>
         </div>
+        <div class="linkRegister">
+            <a href="/frootie/user/register.php">Need an account? Sign up now!</a>
+        </div>
     </div>
+
+    <?php include "../templates/footer.php" ?>
+
 </body>
 </html>

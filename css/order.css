@@ -4,10 +4,13 @@ td {
     border: black solid 1px;
 }
 
+.title-order:after {
+    left: 48.2%;
+}
+
 .order-input {
     width: 50%;
     margin: auto;
-    padding: 20px;
 }
 
 textarea {
@@ -17,9 +20,15 @@ textarea {
     padding: 12px 20px;
     box-sizing: border-box;
     border: 2px solid #ccc;
-    border-radius: 4px;
+    border-radius: 10px;
     resize: none;
     background-color: #ffeded;
+    transition: 400ms;
+}
+
+textarea:focus {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    transform: scale(1.01)
 }
 
 input[type=submit] {
@@ -28,9 +37,11 @@ input[type=submit] {
     color: white;
     padding: 14px 20px;
     margin-top: 8px;
+    margin-bottom: 20px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: 40ms;
 }
 
 input[type=submit]:hover {
@@ -39,7 +50,6 @@ input[type=submit]:hover {
 
 .orders {
     margin: auto;
-    padding: 20px;
     width: 50%;
 }
 
@@ -54,6 +64,15 @@ input[type=submit]:hover {
 
 .order-card:hover {
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
+    transform: scale(1.01);
+}
+
+.order-card:last-child {
+    margin-bottom: 80px;
+}
+
+span {
+    font-weight: bold;
 }
 
 .order-card a {
@@ -70,10 +89,20 @@ input[type=submit]:hover {
 
 .button-change {
     background-color: #4CAF50;
+    transition: 400ms;
+}
+
+.button-change:hover {
+    background-color: #45a049;
 }
 
 .button-delete {
     background-color: #a04545 !important;
+    transition: 400ms;
+}
+
+.button-delete:hover {
+    background-color: #893a3a !important;
 }
 
 table {

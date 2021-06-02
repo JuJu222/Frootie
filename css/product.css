@@ -1,5 +1,18 @@
-.table-produk{
-    border: 1px solid #ddd;
+table {
+    border-collapse: collapse;
+    background: #ffdbdb;
+    border: none;
+    margin: auto auto 80px;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 20px;
+}
+
+td img {
+    max-width: 100px;
+    max-height: 100px;
 }
 
 .btn-hapus{
@@ -7,6 +20,7 @@
     background-color: #d9534f;
     border-color: #d43f3a;
     border-radius: 20px;
+    padding: 20px;
 }
 
 .btn-update{
@@ -14,6 +28,7 @@
     background-color: #f0ad4e;
     border-color: #eea236;
     border-radius: 20px;
+    padding: 10px;
 }
 
 .form-input{
@@ -47,4 +62,11 @@
     background-color: blue;
     border-color: blue;
     border-radius: 20px;
+    margin: auto;
+    padding: 10px;
+    width: 100%;
+}
+
+.title-product-admin:after {
+    left: 48%;
 }

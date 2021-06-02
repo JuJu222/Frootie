@@ -12,15 +12,14 @@ include "product_controller.php";
 </head>
 
 <body>
-    <div class="header">
-        <div class="container">
-            <?php include "../templates/navbar.php" ?>
-        </div>
-    </div>
+    <?php include "../templates/navbar.php" ?>
     <div class="categories">
         <div class="smallContainer">
-            <div class="space"></div>
+            <div class="spaceTitle"></div>
             <h2 class="title">Product Catalog</h2>
+            <?php if (isset($_SESSION['status']) && $_SESSION['status'] == 'admin') { ?>
+                <h2 class="h2-message"><a href="/frootie/product/product_admin.php">Admin Page</a></h2>
+            <?php }?>
             <div class="row">
                 <?php $perproduk = readProduk();
                 foreach ($perproduk as $key => $item) { ?>
@@ -29,19 +28,11 @@ include "product_controller.php";
                         <h4><?php echo $item['nama_produk']; ?></h4>
                         <p>Rp. <?php echo number_format($item['harga_produk']); ?></p>
                     </div>
-
                 <?php } ?>
+            </div>
+        </div>
+    </div>
 
-                <!-- <div class="footer">
-                    <div class="container">
-                        <div class="row">
-                            <div class="footerColumn1">
-                            </div>
-                            <div class="footerColumn2">
-                            </div>
-                            <div class="footerColumn3">
-                            </div>
-                        </div>
-                    </div>
-                </div> -->
+    <?php include "../templates/footer.php" ?>
+
 </body>

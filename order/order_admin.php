@@ -9,11 +9,10 @@
     <?php
         include "order_controller.php";
         include "../templates/navbar.php";
-
-        session_start();
     ?>
+    <div class="spaceTitle"></div>
+    <h2 class="title title-order">All Orders</h2>
     <div class="orders">
-        <h3>All Orders</h3>
             <?php
             $datas = readData();
             foreach ($datas as $key => $data) { ?>

@@ -6,7 +6,7 @@
         <ul id= "Items">
             <li><a href="/frootie/index.php">Home</a></li>
             <li><a href="/frootie/product/product.php">Products</a></li>
-            <li><a href="/frootie/order/order.php">Order</a></li>
+            <li><a href="/frootie/order/order.php">Orders</a></li>
             <li><a href="/frootie/contact.php">Contact Us</a></li>
             <?php
             session_start(); 
@@ -23,7 +23,7 @@
             <?php } ?>
         </ul>
     </nav>
-     <img src="img/menu.png" class="menu-icon" onclick="menutoggle()">
+     <img src="/frootie/img/menu.png" class="menu-icon" onclick="menutoggle()">
 </div>
 
 

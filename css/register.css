@@ -1,12 +1,17 @@
 body .registerUI {
-    float: left;
     background: #ffffff;
     border-radius: 25px;
     width: 400px;
-    height: 500px;
+    height: 490px;
     margin-top: 5%;
-    margin-bottom: 2.5%;
+    margin-bottom: 5%;
     margin-left: 38.5%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: 400ms;
+}
+
+body .registerUI:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -28,10 +33,11 @@ body .registerUI .registerForm {
 .logoRegister img {
     height: 80px;
     transition: 400ms;
+    margin-top: 10px;
 }
 
-body .registerUI .registerForm ul li:nth-child(6) {
-    margin-top: -7.5%;
+body .registerUI .registerForm ul li:nth-child(5) {
+    margin-top: 3%;
     margin-left: 15%;
 }
 
@@ -42,4 +48,9 @@ body .registerUI .registerForm ul li:nth-child(6) {
 
 .logoRegister img:hover {
     filter: brightness(125%);
+}
+
+.linkRegister {
+    text-align: center;
+    margin-top: 10px;
 }

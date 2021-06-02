@@ -1,12 +1,17 @@
 body .loginUI {
-    float: left;
     background: #ffffff;
     border-radius: 25px;
     width: 500px;
-    height: 300px;
+    height: 310px;
     margin-top: 10%;
-    margin-bottom: 2.5%;
+    margin-bottom: 10%;
     margin-left: 35%;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+    transition: 400ms;
+}
+
+body .loginUI:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.6);
 }
 
 body {
@@ -35,6 +40,7 @@ body {
     height: 80px;
     transition: 400ms;
     margin-left: 1%;
+    margin-top: 10px;
 }
 
 .loginError {
@@ -48,4 +54,9 @@ body {
 
 .logoRegister img:hover {
     filter: brightness(125%);
+}
+
+.linkRegister {
+    text-align: center;
+    margin-top: 10px;
 }
