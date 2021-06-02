@@ -24,6 +24,7 @@ body .registerUI .registerForm ul {
 }
 
 body .registerUI .registerForm ul li {
+    width: 175px;
     padding: 15px;
 }
 
@@ -38,7 +39,6 @@ body .registerUI .registerForm {
 
 body .registerUI .registerForm ul li:nth-child(5) {
     margin-top: 3%;
-    margin-left: 15%;
 }
 
 .logoRegister {
@@ -52,4 +52,21 @@ body .registerUI .registerForm ul li:nth-child(5) {
 .linkRegister {
     text-align: center;
     margin-top: 10px;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 8px 12px;
+    margin-top: 8px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: 40ms;
+}
+
+input[type=submit]:hover {
+    background-color: #45a049;
 }

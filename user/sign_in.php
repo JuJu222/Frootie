@@ -36,7 +36,7 @@
                     <input type="password" name="password" id="password">
                 </li>
                 <li>
-                    <button type="submit" name="login">Login</button>
+                    <input type="submit" name="login" value="Log in">
                 </li>
                 <?php
                     if (isset($error)) : ?>

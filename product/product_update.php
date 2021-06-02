@@ -58,9 +58,8 @@ if ($_SESSION['status'] != 'admin') {
 </html>
 
 <?php
-
 if(isset($_POST['update'])) {
-  updateProduk($id, $foto_produk['name'], $foto['tmp_name'], $_POST['nama_produk'], $_POST['harga_produk'], $_POST['berat_produk']);
+  updateProduk($id, $_FILES['foto_produk']['name'], $_FILES['foto_produk']['tmp_name'], $_POST['nama_produk'], $_POST['harga_produk'], $_POST['berat_produk']);
 
   //balik ke halaman utama
   echo "<script>alert('Produk Telah Diupdate');</script>";

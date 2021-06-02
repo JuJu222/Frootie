@@ -45,7 +45,7 @@ if (isset($_POST["register"])){
                     <input type="password" name="passwordConfirm" id="passwordConfirm">
                 </li>
                 <li>
-                    <button type="submit" name="register">Register</button>
+                    <input type="submit" name="login" value="Register">
                 </li>
             </ul>
         </form>
