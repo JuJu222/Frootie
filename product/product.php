@@ -1,5 +1,4 @@
 <?php
-session_start();
 include "product_controller.php";
 ?>
 
@@ -28,7 +27,7 @@ include "product_controller.php";
                     <div class="column2">
                         <img src="../img/<?php echo $item['foto_produk']; ?>" alt="">
                         <h4><?php echo $item['nama_produk']; ?></h4>
-                        <p><?php echo number_format($item['harga_produk']); ?></p>
+                        <p>Rp. <?php echo number_format($item['harga_produk']); ?></p>
                     </div>
 
                 <?php } ?>

@@ -5,7 +5,7 @@
 }
 
 body {
-    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background: radial-gradient(#dc143d, #fa8072);
 }
 
@@ -62,7 +62,13 @@ body {
     display: none;
 }
 
+h1, h2, h3, nav {
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+}
 
+a {
+    text-decoration: none;
+}
 
 /* media query */
 
@@ -75,7 +81,6 @@ body {
         width:100%;
         overflow: hidden;
         transition: max-height 0.5s;
-
     }
 
     .navigationbar nav ul li{
@@ -95,19 +100,12 @@ body {
 
     .navigationbar nav ul li a{
         color:#fff;
-
     }
 
     .menu-icon{
         display:block;
         cursor:pointer;
     }
-
-
-
-   
-    
-
 }
 
     @media only screen and (max-width:600px){
@@ -115,10 +113,8 @@ body {
             text-align:center;
         }
 
-        .column, .column2{
+        .column, .product-card{
             flex-basis: 100%;
         }
-
-
     }
 
