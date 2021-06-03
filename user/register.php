@@ -49,11 +49,7 @@ if (isset($_POST["register"])){
                     <input type="password" name="passwordConfirm" id="passwordConfirm">
                 </li>
                 <li>
-<<<<<<< Updated upstream
                     <button type="submit" name="register">Register</button>
-=======
-                    <input type="submit" name="register" value="Register">
->>>>>>> Stashed changes
                 </li>
                 <a href="/frootie/user/sign_in.php">Have an account already? Sign in here!</a>
             </ul>

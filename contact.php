@@ -6,8 +6,6 @@
 </head>
 <body>
 <?php include "templates/navbar.php"?>
-<<<<<<< Updated upstream
-=======
     <form action="send_email.php" method="post">
         <input type="text" name="name" placeholder="Full Name">
         <input type="text" name="mail" placeholder="E-Mail">
@@ -17,6 +15,5 @@
     </form>
 <?php include "templates/footer.php" ?>
 
->>>>>>> Stashed changes
 </body>
 </html>
