@@ -162,7 +162,7 @@ a {
 
 /* media query */
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 768px){
     .navigationbar nav ul{
         margin-top: 20px;
         position: absolute;
@@ -197,15 +197,12 @@ a {
         display:block;
         cursor:pointer;
     }
-}
 
-    @media only screen and (max-width:600px){
-        .row{
-            text-align:center;
-        }
-
-        .column, .product-card{
-            flex-basis: 100%;
-        }
+    .row{
+        text-align:center;
     }
 
+    .column, .product-card{
+        flex-basis: 100%;
+    }
+}

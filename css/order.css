@@ -108,3 +108,13 @@ span {
 table {
     margin: auto;
 }
+
+@media only screen and (max-width: 768px){
+    .order-input {
+        width: 80%;
+    }
+
+    .orders {
+        width: 80%;
+    }
+}
