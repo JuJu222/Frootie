@@ -82,6 +82,7 @@ a {
 
 .spaceTitle {
     padding: 25px;
+    margin-bottom: 90px;
 }
 
 .title {
@@ -91,7 +92,12 @@ a {
     line-height: 60px;
     color: black;
     font-size: 30px;
+   
+    
 }
+
+
+
 
 .title::after {
     content: '';
@@ -181,6 +187,8 @@ a {
         width:100%;
         overflow: hidden;
         transition: max-height 0.5s;
+        
+
     }
 
     .navigationbar nav ul li{
@@ -200,6 +208,7 @@ a {
 
     .navigationbar nav ul li a{
         color:#fff;
+        z-index: 9999;
     }
 
     .menu-icon{
