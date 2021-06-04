@@ -4,9 +4,7 @@ body .registerUI {
     width: 400px;
     height: max-content;
     padding: 20px 0;
-    margin-top: 5%;
-    margin-bottom: 5%;
-    margin-left: 38.5%;
+    margin: 10% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     transition: 400ms;
 }
@@ -24,12 +22,18 @@ body .registerUI .registerForm ul {
 }
 
 body .registerUI .registerForm ul li {
+    margin: auto;
     width: 175px;
     padding: 15px;
 }
 
 body .registerUI .registerForm {
-    margin-left: 28.5%;
+    margin: auto;
+}
+
+.logoRegister a {
+    display: flex;
+    justify-content: center;
 }
 
 .logoRegister img {
@@ -39,10 +43,6 @@ body .registerUI .registerForm {
 
 body .registerUI .registerForm ul li:nth-child(5) {
     margin-top: 3%;
-}
-
-.logoRegister {
-    margin-left: 27.5%;
 }
 
 .logoRegister img:hover {
@@ -105,9 +105,6 @@ input[type=submit]:hover {
     }
     body .registerUI .registerForm ul li:nth-child(5) {
         margin-top: 3%;
-    }
-    .logoRegister {
-        margin-left: 20%;
     }
     .logoRegister img:hover {
         filter: brightness(125%);
