@@ -27,30 +27,32 @@ if ($_SESSION['status'] != 'admin') {
         }
     }
     ?>
-    <div class="registerUI">
-        <div class="logoRegister">
-            <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
-        </div>
-        <div class="registerForm">
-        <form action="" method="POST">
-            <ul>
-                <li>
-                    <h4>ID</h4>
-                    <input type="text" name="id" id="id" value="<?=$row['user_id'];?>" readonly>
-                </li>
-                <li>
-                    <h4>Name</h4>
-                    <input type="text" name="name" id="name">
-                </li>
-                <li>
-                    <h4>Email</h4>
-                    <input type="text" name="email" id="email">
-                </li>
-                <li>
-                    <button type="submit" name="edit">Edit</button>
-                </li>
-            </ul>
-        </form>
+    <div class="wrapper">
+        <div class="registerUI">
+            <div class="logoRegister">
+                <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
+            </div>
+            <div class="registerForm">
+                <form action="" method="POST">
+                    <ul>
+                        <li>
+                            <h4>ID</h4>
+                            <input type="text" name="id" id="id" value="<?=$row['user_id'];?>" readonly>
+                        </li>
+                        <li>
+                            <h4>Name</h4>
+                            <input type="text" name="name" id="name">
+                        </li>
+                        <li>
+                            <h4>Email</h4>
+                            <input type="text" name="email" id="email">
+                        </li>
+                        <li>
+                            <button type="submit" name="edit">Edit</button>
+                        </li>
+                    </ul>
+                </form>
+            </div>
         </div>
     </div>
 <?php } ?>
