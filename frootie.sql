@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 01, 2021 at 09:22 AM
+-- Generation Time: Jun 04, 2021 at 06:02 PM
 -- Server version: 10.4.18-MariaDB
 -- PHP Version: 8.0.3
 
@@ -84,7 +84,8 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`user_id`, `name`, `password`, `email`, `status`) VALUES
 (3, 'Kevin Sander', 'A', 'ksu@gmail.com', ''),
 (4, 'justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer'),
-(5, 'Admin Frootie', '$2y$10$WB56QPkD4XhTR.zbhZStDex064LnifC9ZxCEIK03g7I8lHSfUoZcC', 'admin@frootie.com', 'admin');
+(5, 'Admin Frootie', '$2y$10$WB56QPkD4XhTR.zbhZStDex064LnifC9ZxCEIK03g7I8lHSfUoZcC', 'admin@frootie.com', 'admin'),
+(6, 'Customer 2', '$2y$10$YP3q0z4wHPJScFS.z0CXYOguJRdsEhmE/iMjSHIXAj5YCHHRqUfzK', 'customer2@frootie.com', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -117,7 +118,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=42;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
 
 --
 -- AUTO_INCREMENT for table `produk`
@@ -129,7 +130,7 @@ ALTER TABLE `produk`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- Constraints for dumped tables
