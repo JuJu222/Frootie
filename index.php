@@ -33,18 +33,21 @@
         <div class="row">
             <div class="column2">
                 <img src="img/apple.png">
-                <h4>Apple</h4>
-                <p>Rp. 8.000</p>
+                <h4>Fuji Apple</h4>
+                <p>Rp. 44,500</p>
+                <p>1,000 g</p>
             </div>
             <div class="column2">
                 <img src="img/pineapple.png">
-                <h4>Pineapple</h4>
-                <p>Rp. 15.000</p>
+                <h4>Wogan Orange</h4>
+                <p>Rp. 40,000</p>
+                <p>1,000 g</p>
             </div>
             <div class="column2">
-                <img src="img/grapes.png">
-                <h4>Grapes</h4>
-                <p>Rp. 20.000</p>
+                <img src="img/grape.png">
+                <h4>Australian Grapes</h4>
+                <p>Rp. 55,000</p>
+                <p>500 g</p>
             </div>
         </div>
     </div>

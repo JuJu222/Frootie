@@ -27,6 +27,7 @@ include "product_controller.php";
                         <img src="../img/<?php echo $item['foto_produk']; ?>" alt="">
                         <h4><?php echo $item['nama_produk']; ?></h4>
                         <p>Rp. <?php echo number_format($item['harga_produk']); ?></p>
+                        <p><?php echo number_format($item['berat_produk']); ?> g</p>
                     </div>
                 <?php } ?>
             </div>
