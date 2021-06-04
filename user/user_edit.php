@@ -23,8 +23,8 @@ if ($_SESSION['status'] != 'admin') {
 
 <div class="spaceTitle"></div>
 <h2 class="title">Daftar User</h2>
-
-<table>
+<div class=tableDiv>
+<table class="center">
     <tr>
         <th>ID.</th>
         <th>Name</th>
@@ -41,6 +41,7 @@ if ($_SESSION['status'] != 'admin') {
     </tr>
     <?php endwhile; ?>  
 </table>
+</div>
 <?php } ?>
 
 <?php include "../templates/footer.php"?>
