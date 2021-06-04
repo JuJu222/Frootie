@@ -6,7 +6,7 @@ if (isset($_POST["register"])){
     if (register($_POST) > 0){
         echo '<script>
             alert("You have successfully registered, proceed to log in.")
-        </script>'
+        </script>';
         header("Location: http://localhost/frootie/user/sign_in.php");
             //Kalau berhasil
     } else {
@@ -49,7 +49,7 @@ if (isset($_POST["register"])){
                     <input type="password" name="passwordConfirm" id="passwordConfirm">
                 </li>
                 <li>
-                    <input type="submit" name="login" value="Register">
+                    <input type="submit" name="register" value="Register">
                 </li>
             </ul>
         </form>
