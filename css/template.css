@@ -160,8 +160,13 @@ a {
     list-style-type: none ;
 }
 
+.wrapper {
+    min-height: 650px;
+}
+
 .table-div {
     overflow-x: auto;
+    min-height: 500px;
 }
 
 /* media query */

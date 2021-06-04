@@ -17,6 +17,7 @@
     if ($_SESSION['status'] != 'admin') {
         echo "You do not have access to this page.";
     } else { ?>
+    <div class="wrapper">
         <div class="spaceTitle"></div>
         <h2 class="title title-product-admin">Data Produk</h2>
         <div class="table-div">
@@ -58,6 +59,7 @@
                 </tbody>
             </table>
         </div>
+    </div>
     <?php } ?>
 
     <?php include "../templates/footer.php"?>
