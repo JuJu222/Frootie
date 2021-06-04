@@ -77,6 +77,7 @@ p {
 }
 
 .categories img {
+    object-fit: contain;
     margin-top: 100px;
     float: left;
     width: 100%;
