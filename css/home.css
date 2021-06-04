@@ -152,18 +152,20 @@ h4 {
 .contactUs1 .contactImage {
     width: 50px;
     height: 50px;
-    float: left;
 }
 
 .contactUs1 ul {
+    text-align: center;
     list-style-type: none;
-    margin-left: 27%;
+    margin: auto;
 }
 
 .contactUs1 ul li {
-    padding-bottom: 5%;
-    margin-top: 21.25%;
-    margin-bottom: 22.5%;
+    margin-bottom: 4.75%;
+}
+
+.contactUs1 ul li:nth-child(2) {
+    margin-bottom: 15%;
 }
 
 .contactUs1 {
@@ -186,20 +188,21 @@ h4 {
     .column2 {
         flex-basis: 100%;
     }
-    .contactUs1 .contactImage {
-        float: left;
-        width: 25px;
-        height: 25px;
-    }
     .contactUs1 .contactImage h5 {
-        float: none;
+        float: right;
     }
     .contactUs1 ul {
         list-style-type: none;
-        margin-left: 15%;
+        width: 50%;
+        margin: 0 auto;
     }
-    .contactUs1 ul li {
-        margin-top: 30%;
+    .contactUs1 .ulImage .contactImage {
+        margin-bottom: 0;
+        margin-left: 29%;
+        margin-right: 29%;
+    }
+    .contactUs1 ul li:nth-child(2) {
+        display: inline-block;
         margin-bottom: 30%;
     }
     .contactUs1 {
