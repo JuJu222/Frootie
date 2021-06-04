@@ -19,8 +19,9 @@
     } else { ?>
         <div class="spaceTitle"></div>
         <h2 class="title title-product-admin">Data Produk</h2>
-        <table class="table-produk">
-            <thead>
+        <div class="table-div">
+            <table class="table-produk">
+                <thead>
                 <tr>
                     <th>No Produk</th>
                     <th>Nama Produk</th>
@@ -29,8 +30,8 @@
                     <th>Foto Produk</th>
                     <th></th>
                 </tr>
-            </thead>
-            <tbody>
+                </thead>
+                <tbody>
                 <?php
                 include "product_controller.php";
                 $data = readProduk();
@@ -50,12 +51,13 @@
                         </td>
                     </tr>
                     <?php $nomor++;
-                    } ?>
-            <tr>
-                <td colspan="6">    <a href="product_create.php" class="btn-tambahproduk">Tambah Produk</a></td>
-            </tr>
-            </tbody>
-        </table>
+                } ?>
+                <tr>
+                    <td colspan="6">    <a href="product_create.php" class="btn-tambahproduk">Tambah Produk</a></td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
     <?php } ?>
 
     <?php include "../templates/footer.php"?>

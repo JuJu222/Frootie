@@ -160,6 +160,10 @@ a {
     list-style-type: none ;
 }
 
+.table-div {
+    overflow-x: auto;
+}
+
 /* media query */
 
 @media only screen and (max-width: 768px){

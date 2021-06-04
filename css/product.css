@@ -3,6 +3,7 @@ table {
     background: #ffdbdb;
     border: none;
     margin: auto auto 80px;
+    white-space: nowrap;
 }
 
 th, td {

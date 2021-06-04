@@ -4,6 +4,7 @@
 <head>
     <?php include "templates/head.php" ?>
     <link rel="stylesheet" href="css/home.css">
+    <script src="js/main.js"></script>
     <title>Frootie</title>
 </head>
 
