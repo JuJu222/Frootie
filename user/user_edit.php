@@ -23,7 +23,7 @@ if ($_SESSION['status'] != 'admin') {
 
 <div class="spaceTitle"></div>
 <h2 class="title">Daftar User</h2>
-<div class=tableDiv>
+<div class="table-div">
 <table class="center">
     <tr>
         <th>ID.</th>
