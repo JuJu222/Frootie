@@ -109,4 +109,21 @@
         mysqli_query($conn, "UPDATE users SET name = '$name', email = '$email' WHERE user_id = $id");
         return mysqli_affected_rows($conn);
     }
+
+    function sendMail($data){
+        $name = $data["name"];
+        $subject = $data["subject"];
+        $mailFrom = $data["mail"];
+        $message = $data["message"];
+
+        $mailTo = "";
+        //Tidak bisa kirim ke gmail
+
+        $header = "From: " . $mailFrom;
+        $txt = "You have received an e-mail from " . $name . ".\n\n" . $message;
+        mail($mailTo, $subject, $message, $header);
+
+        $echoEnd = echo('<script>alert("Successfully sent an email!")</script>');
+        return $echoEnd;
+    }
 ?>

@@ -1,3 +1,6 @@
+<?php
+    if(isset($_POST["sendEmail"]))
+?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -11,7 +14,7 @@
         <input type="text" name="mail" placeholder="E-Mail">
         <input type="text" name="subject" placeholder="Subject">
         <textarea name="message" name="message" placeholder="Message"></textarea>
-        <button type="submit" name="submit">Submit</button>
+        <button type="submit" name="sendEmail">Submit</button>
     </form>
 <?php include "templates/footer.php" ?>
 
