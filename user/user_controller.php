@@ -6,7 +6,13 @@
         $password = mysqli_real_escape_string($conn, $data["password"]);
         $passwordConfirm = mysqli_real_escape_string($conn, $data["passwordConfirm"]);
         $email = $data["email"];
-
+        $emailCheck = mysqli_query($conn, "SELECT * FROM users WHERE email = '$email'");
+        if (mysqli_num_rows($emailCheck) == 1){
+            echo '<script>
+                    alert ("User exists!");
+                  </script>';
+            return false;
+        }
         if ($password !== $passwordConfirm){
             //Kalau password tidak sesuai
             echo '<script>
@@ -109,4 +115,5 @@
         mysqli_query($conn, "UPDATE users SET name = '$name', email = '$email' WHERE user_id = $id");
         return mysqli_affected_rows($conn);
     }
+
 ?>

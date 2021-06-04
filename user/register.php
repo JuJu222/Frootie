@@ -4,6 +4,10 @@ require 'user_controller.php';
 $conn = conn();
 if (isset($_POST["register"])){
     if (register($_POST) > 0){
+        echo '<script>
+            alert("You have successfully registered, proceed to log in.")
+        </script>';
+        header("Location: http://localhost/frootie/user/sign_in.php");
             //Kalau berhasil
     } else {
         //Kalau gagal
@@ -26,7 +30,7 @@ if (isset($_POST["register"])){
             <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
         </div>
         <div class="registerForm">
-        <form action="" method="POST">
+        <form method="POST">
             <ul>
                 <li>
                     <h4>Email</h4>
@@ -45,7 +49,7 @@ if (isset($_POST["register"])){
                     <input type="password" name="passwordConfirm" id="passwordConfirm">
                 </li>
                 <li>
-                    <input type="submit" name="login" value="Register">
+                    <input type="submit" name="register" value="Register">
                 </li>
             </ul>
         </form>
