@@ -16,6 +16,7 @@ body {
 .logo img {
     height: 80px;
     transition: 400ms;
+    margin-left: 20px;
 }
 
 .logo img:hover {
@@ -28,7 +29,7 @@ body {
     align-items: center;
     padding: 5px;
     background-color: black;
-
+    z-index: 2;
 }
 
 .navigationbar nav {
@@ -89,17 +90,17 @@ a {
     line-height: 60px;
     color: black;
     font-size: 30px;
+    width: max-content;
 }
 
 .title::after {
-    content: '';
-    background: white;
-    width: 70px;
-    height: 5px;
-    border-radius: 10px;
-    bottom: 0;
-    position: absolute;
-    left: 47%;
+    content:"";
+    float:left;
+    background:white;
+    width:100%;
+    height:1px;
+    border-radius: 3px;
+    padding-bottom: 5px;
 }
 
 .footer {
@@ -211,5 +212,9 @@ a {
 
     .column, .product-card{
         flex-basis: 100%;
+    }
+    
+    .footer {
+        padding: 60px 20px;
     }
 }

@@ -37,7 +37,7 @@ if ($_SESSION['status'] != 'admin') {
                     <ul>
                         <li>
                             <h4>ID</h4>
-                            <input type="text" name="id" id="id" value="<?=$row['user_id'];?>" readonly>
+                            <input type="text" name="id" id="id" value="<?=$id?>" readonly>
                         </li>
                         <li>
                             <h4>Name</h4>
