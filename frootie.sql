@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 04, 2021 at 06:02 PM
+-- Generation Time: Jun 05, 2021 at 07:12 AM
 -- Server version: 10.4.18-MariaDB
--- PHP Version: 8.0.3
+-- PHP Version: 7.3.27
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,7 +39,8 @@ CREATE TABLE `orders` (
 --
 
 INSERT INTO `orders` (`order_id`, `user_id`, `date`, `message`) VALUES
-(9, 3, '2021-05-17 03:48:17', 'adadadada');
+(49, 4, '2021-06-05 05:08:02', '1x Wogan Orange,\r\n2x Dragon Fruit,\r\n1x Watermelon'),
+(50, 7, '2021-06-05 05:08:51', '1x Cavendish Banana,\r\n1x Fuji Apple,\r\n1x Peach');
 
 -- --------------------------------------------------------
 
@@ -60,8 +61,15 @@ CREATE TABLE `produk` (
 --
 
 INSERT INTO `produk` (`id_produk`, `nama_produk`, `harga_produk`, `berat_produk`, `foto_produk`) VALUES
-(1, 'adadadada', 1, 1, 'subscribe_PNG26.png'),
-(3, 'vb', 3, 3, 'subscribe_PNG26.png');
+(4, 'Fuji Apple', 44500, 1000, 'apple.png'),
+(6, 'Pineapple', 5580, 600, 'pineapple.png'),
+(9, 'Cavendish Banana', 18900, 1000, 'banana.png'),
+(10, 'USA Lemon', 38640, 560, 'lemon.png'),
+(11, 'Peach', 45000, 500, 'peach.png'),
+(12, 'Watermelon', 45000, 3000, 'watermelon.png'),
+(13, 'Wogan Orange', 40000, 1000, 'orange.png'),
+(14, 'Australian Grapes', 55000, 500, 'grape.png'),
+(15, 'Dragon Fruit', 16000, 400, 'dragon_fruit.png');
 
 -- --------------------------------------------------------
 
@@ -82,10 +90,9 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`user_id`, `name`, `password`, `email`, `status`) VALUES
-(3, 'Kevin Sander', 'A', 'ksu@gmail.com', ''),
-(4, 'justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer'),
+(4, 'Justin', '$2y$10$Pf.ad/qNKKYyA1B.jxsJAOP1TF.0X0Y9vQ7qCs.SQHFYre.3ze1DW', 'justin@gmail.com', 'customer'),
 (5, 'Admin Frootie', '$2y$10$WB56QPkD4XhTR.zbhZStDex064LnifC9ZxCEIK03g7I8lHSfUoZcC', 'admin@frootie.com', 'admin'),
-(6, 'Customer 2', '$2y$10$YP3q0z4wHPJScFS.z0CXYOguJRdsEhmE/iMjSHIXAj5YCHHRqUfzK', 'customer2@frootie.com', 'customer');
+(7, 'Kevin', '$2y$10$ASAzk4aUSUYQy0FK9HX5cupEzKAriZEM8xneOyGFt8KJl50RkzkC.', 'kevin@gmail.com', 'customer');
 
 --
 -- Indexes for dumped tables
@@ -118,19 +125,19 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `orders`
 --
 ALTER TABLE `orders`
-  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `order_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=51;
 
 --
 -- AUTO_INCREMENT for table `produk`
 --
 ALTER TABLE `produk`
-  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_produk` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
+  MODIFY `user_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=15;
 
 --
 -- Constraints for dumped tables
