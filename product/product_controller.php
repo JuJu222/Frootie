@@ -72,8 +72,16 @@ function updateProduk($id, $namafoto, $lokasifoto, $nama_produk, $harga_produk, 
     if(!empty($lokasifoto)) {
         move_uploaded_file($lokasifoto,"../img/$namafoto");
 
+        $get = $conn->query("SELECT * FROM produk WHERE id_produk= $id");
+        $row = $get->fetch_assoc();
+        $foto_produk=$row['foto_produk'];
+        if(file_exists("../img/$foto_produk")) {
+            unlink("../img/$foto_produk");
+        }
+
         $conn->query("UPDATE produk SET nama_produk ='$nama_produk', harga_produk = '$harga_produk', berat_produk = '$berat_produk', foto_produk = '$namafoto'
        WHERE id_produk = '$_GET[id_produk]'");
+
 
     }
     else {
