@@ -5,7 +5,7 @@
     <?php include "templates/head.php" ?>
     <link rel="stylesheet" href="css/home.css">
     <script src="js/main.js"></script>
-    <title>Frootie</title>
+    <title>Home</title>
 </head>
 
 <body>
@@ -17,7 +17,7 @@
                 <h1>Try Out Our New <br>Fresh Fruits!</h1>
                 <p>Our fruits are 100% authentic, breeded, and harvested from <br>
                     the best selection of greenhouses in Indonesia.
-                    <br><a href="/frootie/product/product.php" class="button">See Our Products</a>
+                    <br><a href="/~ucweb3/frootie/product/product.php" class="button">See Our Products</a>
             </div>
             <div class="column">
                 <img src="img/fruits.png">
@@ -38,7 +38,7 @@
                 <p>1,000 g</p>
             </div>
             <div class="column2">
-                <img src="img/pineapple.png">
+                <img src="img/orange.png">
                 <h4>Wogan Orange</h4>
                 <p>Rp. 40,000</p>
                 <p>1,000 g</p>

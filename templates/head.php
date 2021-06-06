@@ -2,7 +2,9 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link rel="stylesheet" href="/frootie/css/template.css">
+<link rel="shortcut icon" href="/~ucweb3/frootie/img/Frootie_Logo_No_Text.ico" type="image/x-icon">
+
+<link rel="stylesheet" href="/~ucweb3/frootie/css/template.css">
 
 <link rel="preconnect" href="https://fonts.gstatic.com">
 <link href="https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap" rel="stylesheet">

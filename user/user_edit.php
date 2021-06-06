@@ -10,7 +10,7 @@
 <head>
     <?php include "../templates/head.php" ?>
     <link rel="stylesheet" href="../css/user_edit.css">
-    <title>Frootie User Edit</title>
+    <title>Edit User</title>
 </head>
 
 <body>
@@ -18,7 +18,9 @@
 include "../templates/navbar.php";
 
 if ($_SESSION['status'] != 'admin') {
+    echo '<div class="wrapper">';
     echo "You do not have access to this page.";
+    echo '</div>';
 } else { ?>
 <div class="wrapper">
     <div class="spaceTitle"></div>

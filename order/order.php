@@ -3,7 +3,7 @@
 <head>
     <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/order.css">
-    <title>Document</title>
+    <title>Orders</title>
 </head>
 <body>
     <?php
@@ -14,7 +14,7 @@
     <div class="spaceTitle"></div>
     <h2 class="title title-order">Product Orders</h2>
     <?php if (isset($_SESSION['status']) && $_SESSION['status'] == 'admin') { ?>
-        <h2 class="h2-message"><a href="/frootie/order/order_admin.php">Admin Page</a></h2>
+        <h2 class="h2-message"><a href="/~ucweb3/frootie/order/order_admin.php">Admin Page</a></h2>
     <?php }?>
     <div class="order-input">
     <?php if (isset($_SESSION['name'])) {  ?>

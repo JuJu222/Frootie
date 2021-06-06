@@ -3,14 +3,16 @@
 <head>
     <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/register.css">
-    <title>Edit</title>
+    <title>Edit User</title>
 </head>
 <body>
 <?php
 include "../templates/navbar.php";
 
 if ($_SESSION['status'] != 'admin') {
+    echo '<div class="wrapper">';
     echo "You do not have access to this page.";
+    echo '</div>';
 } else {
     require 'user_controller.php';
     $conn = conn();
@@ -19,7 +21,7 @@ if ($_SESSION['status'] != 'admin') {
     $row = mysqli_fetch_assoc($requiredValueRead);
     if (isset($_POST["edit"])){
         if (editData($_POST) > 0){
-            header("Location: http://localhost/Frootie/user/user_edit.php");
+            header("Location: http://172.96.191.65/~ucweb3/frootie/user/user_edit.php");
             //Kalau berhasil
         } else {
             //Kalau gagal
@@ -30,7 +32,7 @@ if ($_SESSION['status'] != 'admin') {
     <div class="wrapper">
         <div class="registerUI">
             <div class="logoRegister">
-                <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
+                <a href="/~ucweb3/frootie/index.php"><img src="/~ucweb3/frootie/img/Frootie_Logo_Horizontal.png"></a>
             </div>
             <div class="registerForm">
                 <form action="" method="POST">

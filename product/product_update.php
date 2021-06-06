@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Update Product</title>
     <link rel="stylesheet" href="../css/product.css">
     <?php include "../templates/head.php"?>
 </head>
@@ -15,7 +15,9 @@
 include "../templates/navbar.php";
 
 if ($_SESSION['status'] != 'admin') {
+    echo '<div class="wrapper">';
     echo "You do not have access to this page.";
+    echo '</div>';
 } else { ?>
     <div class="spaceTitle"></div>
     <h2 class="title">Ubah Produk</h2>

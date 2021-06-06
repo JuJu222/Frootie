@@ -7,7 +7,7 @@ if (isset($_POST["register"])){
         echo '<script>
             alert("You have successfully registered, proceed to log in.")
         </script>';
-        header("Location: http://localhost/frootie/user/sign_in.php");
+        header("Location: http://172.96.191.65/~ucweb3/frootie/user/sign_in.php");
             //Kalau berhasil
     } else {
         //Kalau gagal
@@ -27,7 +27,7 @@ if (isset($_POST["register"])){
     <?php include "../templates/navbar.php"?>
     <div class="registerUI">
         <div class="logoRegister">
-            <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
+            <a href="/~ucweb3/frootie/index.php"><img src="/~ucweb3/frootie/img/Frootie_Logo_Horizontal.png"></a>
         </div>
         <div class="registerForm">
         <form method="POST">
@@ -55,7 +55,7 @@ if (isset($_POST["register"])){
         </form>
         </div>
         <div class="linkRegister">
-            <a href="/frootie/user/sign_in.php">Have an account already? Sign in here!</a>
+            <a href="/~ucweb3/frootie/user/sign_in.php">Have an account already? Sign in here!</a>
         </div>
     </div>
 

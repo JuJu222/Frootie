@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/product.css">
-    <title>Document</title>
+    <title>Edit Products</title>
 </head>
 
 <body>
@@ -15,7 +15,9 @@
     include "../templates/navbar.php";
 
     if ($_SESSION['status'] != 'admin') {
+        echo '<div class="wrapper">';
         echo "You do not have access to this page.";
+        echo '</div>';
     } else { ?>
     <div class="wrapper">
         <div class="spaceTitle"></div>

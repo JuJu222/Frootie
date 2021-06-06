@@ -1,9 +1,9 @@
 <?php
     function conn() {
         $dbhost = "localhost";
-        $dbuser = "root";
-        $dbpass = "";
-        $db = "frootie";
+        $dbuser = "ucweb3_Frootie";
+        $dbpass = "Frootie123!@#";
+        $db = "ucweb3_Frootie";
 
         $connect = mysqli_connect($dbhost, $dbuser, $dbpass, $db) or die ("Error connecting to Database");
 

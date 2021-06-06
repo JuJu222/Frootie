@@ -52,7 +52,7 @@
                 $_SESSION["name"] = $row["name"];
                 $_SESSION["email"] = $row["email"];
                 $_SESSION["status"] = $row["status"];
-                header("Location: http://localhost/Frootie/index.php");
+                header("Location: http://172.96.191.65/~ucweb3/frootie/index.php");
                 exit;
                 //Login Berhasil
             }

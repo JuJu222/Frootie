@@ -4,7 +4,7 @@ body .registerUI {
     width: 400px;
     height: max-content;
     padding: 20px 0;
-    margin: 10% auto;
+    margin: 3.5% auto;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
     transition: 400ms;
 }

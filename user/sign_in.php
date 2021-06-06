@@ -16,13 +16,13 @@
 <head>
     <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/signin.css">
-    <title>Document</title>
+    <title>Sign In</title>
 </head>
 <body>
     <?php include "../templates/navbar.php"?>
     <div class="loginUI">
         <div class="logoRegister">
-            <a href="/frootie/index.php"><img src="/frootie/img/Frootie_Logo_Horizontal.png"></a>
+            <a href="/~ucweb3/frootie/index.php"><img src="/~ucweb3/frootie/img/Frootie_Logo_Horizontal.png"></a>
         </div>
         <div class="loginForm">
         <form action="" method="POST">
@@ -50,7 +50,7 @@
         </form>
         </div>
         <div class="linkRegister">
-            <a href="/frootie/user/register.php">Need an account? Sign up now!</a>
+            <a href="/~ucweb3/frootie/user/register.php">Need an account? Sign up now!</a>
         </div>
     </div>
 

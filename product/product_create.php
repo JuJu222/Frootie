@@ -6,14 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/product.css">
     <?php include "../templates/head.php"?>
-    <title>Document</title>
+    <title>Create Product</title>
 </head>
 <body>
 <?php
 include "../templates/navbar.php";
 
 if ($_SESSION['status'] != 'admin') {
+    echo '<div class="wrapper">';
     echo "You do not have access to this page.";
+    echo '</div>';
 } else { ?>
     <div class="spaceTitle"></div>
     <h2 class="title">Tambah Produk</h2>

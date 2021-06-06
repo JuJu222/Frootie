@@ -8,7 +8,7 @@ include "product_controller.php";
 <head>
     <?php include "../templates/head.php" ?>
     <link rel="stylesheet" href="../css/home.css">
-    <title>Frootie</title>
+    <title>Products</title>
 </head>
 
 <body>
@@ -18,7 +18,7 @@ include "product_controller.php";
             <div class="spaceTitle"></div>
             <h2 class="title">Product Catalog</h2>
             <?php if (isset($_SESSION['status']) && $_SESSION['status'] == 'admin') { ?>
-                <h2 class="h2-message"><a href="/frootie/product/product_admin.php">Admin Page</a></h2>
+                <h2 class="h2-message"><a href="/~ucweb3/frootie/product/product_admin.php">Admin Page</a></h2>
             <?php }?>
             <div class="row">
                 <?php $perproduk = readProduk();

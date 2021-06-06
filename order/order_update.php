@@ -3,9 +3,10 @@
 <head>
     <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/order.css">
-    <title>Document</title>
+    <title>Change Order</title>
 </head>
 <body>
+    <div class="wrapper">
     <?php
         include "order_controller.php";
         include "../templates/navbar.php" ;
@@ -22,7 +23,7 @@
             <input type="submit" name="submit" value="Submit">
         </form>
     </div>
-
+    </div>
     <?php         include "../templates/footer.php" ; ?>
 
 </body>

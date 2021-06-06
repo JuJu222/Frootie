@@ -3,7 +3,7 @@
 <head>
     <?php include "../templates/head.php"?>
     <link rel="stylesheet" href="../css/order.css">
-    <title>Document</title>
+    <title>Edit Orders</title>
 </head>
 <body>
     <?php
@@ -11,7 +11,9 @@
     include "../templates/navbar.php";
 
     if ($_SESSION['status'] != 'admin') {
+        echo '<div class="wrapper">';
         echo "You do not have access to this page.";
+        echo '</div>';
     } else { ?>
     <div class="wrapper">
         <div class="spaceTitle"></div>
